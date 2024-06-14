@@ -1,0 +1,48 @@
+Klasifikasi penumonia 
+- Dataset https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+- jumlah foto dataset: 5232
+- preprocessing : Zoomout, convert to biner, grayscale
+- Extraction Feature: Histogram, Heatmap
+- Algortima Classifier : Convolutional Neural Network (CNN)
+- Epoch: 10
+- Dataset Spliting: 80% train, 20 Test
+- Hasil Accuracy: 99% dengan menggunakan aplikasi streamlint mendapakan hasil yang bagus
+
+Object Detection Kematangan Cabai
+- Dataset: Costume:  https://drive.google.com/drive/folders/1hPrcwXArWqynnJNFJ6_yUA9rdDlv4oky?usp=sharing
+- Agumentasi: Flip, Rotation, Shear, Blur, Noise, Bounding Box Rotation
+- Jumlah foto Dataset: 219
+- Jumlah class: 3 (cabai Hijau, Cabai Merah, Cabai Orange)
+- Split Data:  80% Train 10%test 10%Valid
+- Model yang di gunakan: Ultralytics YOLOv8
+- Epochs: 200
+- Batch: 16
+- Image_size :640
+- optimizer : adamW
+- Learning Rate: 0.001
+- momentum : 0,9
+- Layer : 168
+- precision 88.2 %
+- recall 66,4%
+- mean Average Precision: 72,9%
+- Hasil : hasil deteksi sudah sangat bagus walapun ada beberapa gamabr yang deteksi nya kurang sempurna mungkin karena kekuranng jumlah foto dalam datasetnya
+
+Segmentasi Cabai Matang
+- Dataset : Custom https://drive.google.com/drive/folders/1hPrcwXArWqynnJNFJ6_yUA9rdDlv4oky?usp=sharing
+- Agumentasi : Flip, 90 Rotate, Rotation, Shear
+- Jumlah Foto Dataset: 210
+- Jumlah Class:3 (Cabai Hijau, Cabai Merah, Cabai Orange)
+- Spliting Data: 80% train 10% Test 10% Validasi
+- Model: Ultralytics YOLOv8
+- Epochs : 100
+- Batch: 16
+- Inage_size : 640
+- optimizer : adamW
+- Learning_rate : 0.001
+- Momentum: 0.9
+- Layer: 192 Layer
+- Mask Precision: 0.736
+- Mask Recall: 0.684
+- Mask MAP50: 0.863
+- Mask MAP50-95: 0.573
+- Hasil: Hasil Segmentasi sudah sangat bagus walaupin masih ada beberapa gamabr yang tersegment secara tidak sempuran mungkin karena beberapa kekurangan foto dalam dataset
